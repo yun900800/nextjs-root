@@ -27,3 +27,19 @@
     - 5.将项目推送到远程仓库
 
     git push -u origin master
+
+
+5. static genatation 存在的问题,build的时间随着页面的数目成比例的增长;页面一旦build完成，永远包含过时的数据，除非重新rebuild
+
+6. 理解ISR的具体效果是解决什么问题?如何使用这个功能呢? ISR是一定需要有用户访问请求发生以后才会生成新的页面.
+
+7. Static Genaration的缺点,
+    - 1.在每次request的时候不能fetch data,
+    - 2.不能访问请求数据(Incoming request)
+    因此才有了SSR
+8. getServerSideProps只在服务端运行,不能在客户端运行;任何服务端代码都可以运行在此函数中,比如访问文件和数据库等;
+    此外APIkey啥的可以在此运行;不用担心泄露;这个函数只能运行在page文件中,不能运行在组件文件中;每次请求时候运行.
+
+9. getServerSideProps的参数context可以访问req,res,params,query等
+
+10. 给子项目添加依赖: yarn workspace nextjs-prerendering add swr

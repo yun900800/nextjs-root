@@ -1,0 +1,17 @@
+{
+  "name": "nextjs-root",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": "true",
+  "workspaces" : [
+    "packages/*"
+  ],
+  "scripts": {
+    "fundamenta-dev":"yarn workspace nextjs-fundamental dev",
+    "fundamenta-build":"yarn workspace nextjs-fundamental build",
+    "prerendering-dev":"yarn workspace nextjs-prerendering dev",
+    "prerendering-build":"yarn workspace nextjs-prerendering build",
+    "prerendering-start":"yarn workspace nextjs-prerendering start"
+  }
+}

@@ -14,10 +14,12 @@
     "prerendering-build": "yarn workspace nextjs-prerendering build",
     "prerendering-start": "yarn workspace nextjs-prerendering start",
     "serve-json" :"json-server --watch db.json --port 4000",
-
     "api-dev": "yarn workspace nextjs-api dev",
     "api-build": "yarn workspace nextjs-api build",
-    "api-start": "yarn workspace nextjs-api start"
+    "api-start": "yarn workspace nextjs-api start",
+    "style-dev": "yarn workspace nextjs-styling dev",
+    "style-build": "yarn workspace nextjs-styling build",
+    "style-start": "yarn workspace nextjs-styling start"
   },
   "dependencies": {
     "json-server": "^0.17.3"

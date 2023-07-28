@@ -1,4 +1,4 @@
-## API Route summary
+# API Route summary
 
 1. API route 与 page的工作机制相似,只不过多了一个api文件夹  
 
@@ -10,4 +10,4 @@
 
 5. 在预渲染的时候不能调用我们自己的API路由
 
-6. routing, pre-rendering, api-route构成了nextjs的fundamental  
+6. routing, pre-rendering, api-route构成了nextjs的fundamental.  

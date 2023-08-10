@@ -1,0 +1,9 @@
+.pets_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1;
+    margin-top: 20px;
+    padding: 10px;
+}

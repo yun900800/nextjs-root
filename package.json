@@ -1,0 +1,30 @@
+{
+  "name": "nextjs-root",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": "true",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "fundamenta-dev": "yarn workspace nextjs-fundamental dev",
+    "fundamenta-build": "yarn workspace nextjs-fundamental build",
+    "prerendering-dev": "yarn workspace nextjs-prerendering dev",
+    "prerendering-build": "yarn workspace nextjs-prerendering build",
+    "prerendering-start": "yarn workspace nextjs-prerendering start",
+    "serve-json" :"json-server --watch db.json --port 4000",
+    "api-dev": "yarn workspace nextjs-api dev",
+    "api-build": "yarn workspace nextjs-api build",
+    "api-start": "yarn workspace nextjs-api start",
+    "style-dev": "yarn workspace nextjs-styling dev",
+    "style-build": "yarn workspace nextjs-styling build",
+    "style-start": "yarn workspace nextjs-styling start",
+    "misc-dev": "yarn workspace next-misc dev",
+    "misc-build": "yarn workspace next-misc build",
+    "misc-start": "yarn workspace next-misc start"
+  },
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
+}

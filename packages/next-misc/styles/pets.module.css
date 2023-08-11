@@ -2,8 +2,49 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1%;
     flex: 1;
     margin-top: 20px;
-    padding: 10px;
+    padding: 10px 280px;
 }
+
+.small_pets_item {
+    object-fit: cover;
+}
+
+
+
+@media only screen and (max-width: 576px) {
+    .pets_container {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .pets_item {
+        width: 100%;
+    }
+
+    .small_pets_item {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .pets_item {
+        width: 32%;
+        margin-top: 20px;
+    }
+    .small_pets_item {
+        width: 32%;
+    }
+}
+
+/* @media screen and (min-width: 1024px) {
+    .pets_item {
+        width: 19%;
+    }
+    .small_pets_item {
+        width: 20%;
+    }
+    
+} */

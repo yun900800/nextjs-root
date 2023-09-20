@@ -1,0 +1,11 @@
+.modal-container {
+    min-width: 300px;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4px;
+    padding: 0 20px;
+    background: #efefef;
+}

@@ -9,7 +9,9 @@
     "build": "next build",
     "start": "next start -p 3021",
     "export": "next build & next export",
-    "lint": "next lint"
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6007 -s ./public",
+    "build-storybook": "storybook build -s public"
   },
   "dependencies": {
     "@types/node": "20.4.4",

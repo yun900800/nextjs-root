@@ -25,3 +25,106 @@ body {
     align-items: center;
     flex: 1;
 }
+
+section .container .signupBx{
+    pointer-events: none;
+}
+
+section .container.active .signupBx{
+    pointer-events: initial;
+}
+
+section .container .signupBx .formBx {
+    top:100%;
+}
+
+section .container.active .signupBx .formBx {
+    top:0;
+}
+section .container .signupBx .imgBx {
+    top:-100%;
+    transition: 0.5s;
+    background: red;
+}
+section .container.active .signupBx .imgBx {
+    top:0;
+}
+
+
+
+section .container .signinBx .formBx {
+    top:0;
+}
+
+section .container.active .signinBx .formBx{
+    top:100%;
+}
+
+section .container .signinBx .imgBx {
+    top:0;
+    transition: 0.5s;
+}
+
+section .container.active .signinBx .imgBx{
+    top:-100%;
+}
+
+section .container .signinBx .formBx input[type='submit'] {
+    max-width: 100px;
+    background: #677eff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+section .container .signupBx .formBx input[type='submit'] {
+    max-width: 100px;
+    background: #e73e49;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+    section .container {
+        max-width: 400px;
+    }
+
+    section .container.active .signinBx .formBx{
+        top:-100%;
+    }
+}
+
+.imgBx-display-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reOverlay__modalContainer {
+    border-radius: 4px;
+}
+
+#storybook-root .imgBx { 
+    background: #efefef;
+}
+
+#storybook-root .midSize {
+    background: #efefef;
+    width: 300px;
+    height: 300px; 
+}
+
+#storybook-root .bigSize {
+    background: #efefef;
+    width: 800px;
+    height: 800px;
+}
+
+

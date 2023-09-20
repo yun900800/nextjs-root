@@ -1,0 +1,37 @@
+.img-bx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    min-width: 100px;
+    min-height: 100px;
+    transition: 0.5s;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+/* 这里为了让 img-bx 下的元素居中有两种方法
+ * 1. 使用display:flex布局居中
+ * 2. 使用绝对定位,任意一种都可以
+ * 一般来说,使用flex布局的时候效果更好
+ * 对于需要宽和高的容器或者图片来说,设置max-XXX或者min-XXX是一个最佳实践
+ * 这里的XXX指的是width或者height,
+ */
+
+.img-bx img {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 600px;
+    object-fit: cover;
+    /* background-size: cover; */
+}
+
+@media (max-width: 991px) { 
+    .img-bx {
+        display: none;
+    }
+}
